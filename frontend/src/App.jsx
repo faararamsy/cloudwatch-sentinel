@@ -13,6 +13,7 @@ const SEVERITY_COLORS = {
   HIGH: "#f97316", 
   MEDIUM: "#eab308",
   LOW: "#22c55e"
+
 }
 
 const SEVERITY_ICONS = {
@@ -58,7 +59,7 @@ export default function App() {
       // Here we're sending a POST request to our FastAPI backend
       // with the log file attached.
 
-      const response = await axios.post("http://localhost:8000/analyze", formData, {
+      const response = await axios.post("https://cloudwatch-sentinel-production.up.railway.app/analyze", formData, {
         headers: { "Content-Type": "multipart/form-data" }
       })
 
