@@ -1,0 +1,10 @@
+analyzer.py
+
+-Connects to Groq's servers using the API key
+-Sends the log text to the Llama 3.3 AI model with a detailed instruction — "you are a cybersecurity expert, analyze this, return JSON"
+-Gets the response back
+-Parses it from raw text into a proper Python dictionary
+
+main.py
+
+-
